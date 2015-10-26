@@ -11,5 +11,8 @@
 <p>
     <a href="./formSuperhero.php">Register as a Superhero</a>
 </p>
+<p>
+    <a href="./superheroMovies.php">Search Superhero movies</a>
+</p>
 </body>
 </html>
