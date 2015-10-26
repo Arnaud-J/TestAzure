@@ -19,9 +19,9 @@
         <option value="Male">Male</option>
     </select><br/><br/>
     <label>Superpowers</label><br/>
-    <input type="checkbox" name="powers" value="fly">Fly<br/>
-    <input type="checkbox" name="powers" value="lasers">Lasers<br/>
-    <input type="checkbox" name="powers" value="superstrength">Super-strength<br/>
+    <input type="checkbox" name="fly">Fly<br/>
+    <input type="checkbox" name="lasers">Lasers<br/>
+    <input type="checkbox" name="superstrength">Super-strength<br/>
     <input type="submit" value="Submit">
 </form>
 </body>
