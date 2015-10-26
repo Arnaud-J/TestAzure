@@ -8,6 +8,7 @@
 <?php
 
 $year = $_GET["year"] ? $_GET["year"] : "";
+echo $year;
 
 // connect to your server and select database
 $db = new mysqli(
@@ -23,7 +24,7 @@ if($db->connect_errno){
 }
 
 // create a SQL query as a string
-$sql_query = "SELECT * FROM marvelmovies " . !empty($year) ? ("WHERE yearReleased = " . $year) : "";
+$sql_query = "SELECT * FROM marvelmovies" . !empty($year) ? (" WHERE yearReleased = " . $year) : "";
 
 // execute the SQL query
 $result = $db->query($sql_query);
