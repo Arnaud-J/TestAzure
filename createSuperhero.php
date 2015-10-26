@@ -20,9 +20,9 @@ echo "<h1>" . $forename . " " . $surname . "</h1>
             . $dob . "<br/>"
             . $gender . "<br/>"
             . "Superpowers:<br/>"
-            . $fly ? "Fly ; " : ""
-            . $lasers ? "Lasers ; " : ""
-            . $superstrength ? "Super-strength ; " : ""
+            . $fly
+            . $lasers
+            . $superstrength
         . "</p>" ;
 ?>
 </body>
