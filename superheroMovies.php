@@ -11,7 +11,7 @@
 <?php
 
 $year = $_GET["year"] ? $_GET["year"] : "";
-echo $year;
+echo !empty($year) ? "<p>Year: " . $year . "</p>" : "";
 
 // connect to your server and select database
 $db = new mysqli(
