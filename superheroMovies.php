@@ -8,7 +8,6 @@
 <?php
 
 $year = $_GET["year"] ? $_GET["year"] : "";
-$whereYear = !empty($year) ? "year = "
 
 // connect to your server and select database
 $db = new mysqli(
