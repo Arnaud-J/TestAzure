@@ -2,14 +2,11 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Deployment Test</title>
+    <title>Hello World</title>
 </head>
 <body>
-<H1> It's ALIVE!!!</H1>
 <p>
-    <?php
-    echo "Hello world !";
-    ?>
+    <a href="./helloSelector.php">Hello Selector</a>
 </p>
 </body>
 </html>
