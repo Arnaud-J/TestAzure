@@ -31,7 +31,11 @@ $result = $db->query($sql_query);
 
 while($row = $result->fetch_array()){
    // print out fields from row of data
-   echo "<p>” . $row . “</p>";
+   echo $row['marvelMovieID'] . " - "
+       . $row['yearReleased'] . " - "
+       . $row['title'] . " - "
+       . $row['productionStudio'] . " - "
+       . $row['notes'] . "<br>";
 }
 
 $result->close();
