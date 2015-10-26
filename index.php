@@ -8,5 +8,8 @@
 <p>
     <a href="./helloSelector.php">Hello Selector</a>
 </p>
+<p>
+    <a href="./formSuperhero.php">Register as a Superhero</a>
+</p>
 </body>
 </html>
