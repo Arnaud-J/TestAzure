@@ -5,6 +5,9 @@
     <title>Superhero Movies</title>
 </head>
 <body>
+<h1>
+    Superhero Movies
+</h1>
 <?php
 
 $year = $_GET["year"] ? $_GET["year"] : "";
@@ -24,7 +27,7 @@ if($db->connect_errno){
 }
 
 // create a SQL query as a string
-$sql_query = "SELECT * FROM marvelmovies" . !empty($year) ? (" WHERE yearReleased = " . $year) : "";
+$sql_query = "SELECT * FROM marvelmovies" . (!empty($year) ? (" WHERE yearReleased = " . $year) : "");
 
 // execute the SQL query
 $result = $db->query($sql_query);
