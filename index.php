@@ -19,6 +19,10 @@ function displayAccessLevelInformation($access_level) {
     }
 }
 
+if($_COOKIE['access_level']) {
+    displayAccessLevelInformation($_COOKIE['access_level']);
+}
+
 ?>
 
 <p>
