@@ -5,7 +5,7 @@ error_reporting('-1');
 
 require_once "commonFunctions.php";
 
-htmlHead("Index");
+htmlHead("Index","","");
 
 echo $_COOKIE['username'] ? ('<h1>Welcome '.$_COOKIE['username'].'</h1>') : '';
 

@@ -1,5 +1,9 @@
 <?php
 
+function isEmpty($var) {
+    return $var == "";
+}
+
 function htmlHead($title, $lang, $charset)
 {
     $realTitle = !isEmpty($title) ? $title : "Default title";
