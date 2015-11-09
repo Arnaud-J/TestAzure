@@ -74,7 +74,9 @@ class Section
         $this->$sectionName = $sectionName;
         $this->orderID = $orderID;
         $this-> textID = $textID;
-        $this->$text = isset($text) ? $text : "";
+        if(isset($text)) {
+            $this->text=$text;
+        }
     }
 
     /**
