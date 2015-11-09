@@ -9,8 +9,9 @@
 class DataAccess
 {
     public static function getTitle($sectionID) {
-        $query = "select sectionName from sections where sectionID =". $sectionID;
-        $result=BD::getInstance()->prepareAndExecuteQueryWithResult($query,'');
+        $query = "select sectionName from sections where sectionID = ?";
+        $param= array(0  => array($sectionID, PDO::PARAM_STR));
+        $result=BD::getInstance()->prepareAndExecuteQueryWithResult($query,$param);
         return $result;
     }
 }
