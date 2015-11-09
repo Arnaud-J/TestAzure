@@ -12,7 +12,9 @@ class DataAccess
         $query = "select sectionName from sections where sectionID = ?";
         $param= array(0  => array($sectionID, PDO::PARAM_STR));
         $result=BD::getInstance()->prepareAndExecuteQueryWithResult($query,$param);
-
-        return $result;
+        foreach($result as $value) {
+            $sectionName[] = $value['sectionName'];
+        }
+        return $sectionName;
     }
 }
