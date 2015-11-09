@@ -8,11 +8,13 @@ require_once "BD.php";
 require_once "DataAccess.php";
 
 $sectionID = isset($_GET['sectionID']) ? $_GET['sectionID'] : "1";
-$title = DataAccess::getTitle($sectionID);
+$titles = DataAccess::getTitle($sectionID);
 
 htmlHead("Index","","");
 
-echo $title;
+foreach($titles as $title) {
+    echo $title;
+}
 
 htmlFoot();
 ?>
