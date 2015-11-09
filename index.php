@@ -12,9 +12,14 @@ $titles = DataAccess::getTitle($sectionID);
 
 htmlHead("Index","","");
 
+echo $sectionID;
+
+echo $titles;
+
 foreach($titles as $title) {
     echo $title;
 }
+
 
 htmlFoot();
 ?>
