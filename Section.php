@@ -77,13 +77,21 @@ class Section
         $this->$text = $text;
     }
 
-    public function toString() {
+    /**
+     * The __toString method allows a class to decide how it will react when it is converted to a string.
+     *
+     * @return string
+     * @link http://php.net/manual/en/language.oop5.magic.php#language.oop5.magic.tostring
+     */
+    function __toString()
+    {
         return "Section ID: ".$this->getSectionID()
-            ."<br>Topic ID: ".$this->getTopicID()
-            ."<br>Section Name: ".$this->getSectionName()
-            ."<br>Order ID: ".$this->getOrderID()
-            ."<br>Text ID: ".$this->getTextID()
-            ."<br>Text: ".$this->getText()
-            ."<br>";
+        ."<br>Topic ID: ".$this->getTopicID()
+        ."<br>Section Name: ".$this->getSectionName()
+        ."<br>Order ID: ".$this->getOrderID()
+        ."<br>Text ID: ".$this->getTextID()
+        ."<br>Text: ".$this->getText()
+        ."<br>";
     }
+
 }

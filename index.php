@@ -13,7 +13,7 @@ $section = DataAccess::getTitle($sectionID);
 
 htmlHead("Index","","");
 
-echo $section.toString();
+echo $section;
 
 
 htmlFoot();
