@@ -6,7 +6,7 @@ error_reporting('-1');
 require_once "commonFunctions.php";
 require_once "";
 
-$sectionID = $_GET['sectionID'] ? $_GET['sectionID'] : "1";
+$sectionID = isset($_GET['sectionID']) ? $_GET['sectionID'] : "1";
 $title = DataAccess::getTitle($sectionID);
 
 htmlHead("Index","","");
