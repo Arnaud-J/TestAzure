@@ -9,12 +9,12 @@
 class DataAccess
 {
     public static function getTitle($sectionID) {
-        $query = "select sectionName from sections where sectionID = ?";
+        $query = "select * from sections, articleText where sections.textID = articleText.textID and sectionID = ?";
         $param= array(0  => array($sectionID, PDO::PARAM_STR));
         $result=BD::getInstance()->prepareAndExecuteQueryWithResult($query,$param);
         foreach($result as $value) {
-            $sectionName[] = $value['sectionName'];
+            $section = new Section($value['sectionID'], $value['topicID'], $value['sectionName'], $value['orderID'], $value['textID'], $value['text']);
         }
-        return $sectionName[0];
+        return $section;
     }
 }
