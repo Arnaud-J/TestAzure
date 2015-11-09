@@ -18,4 +18,13 @@ class DataAccess
         }
         return isset($section) ? $section : null;
     }
+
+    public static function getTopics() {
+        $query = "SELECT * FROM topics";
+        $result=BD::getInstance()->prepareAndExecuteQueryWithResult($query,"");
+        foreach($result as $value) {
+            $topics[] = new Topic($value['topicID'], $value['topicName']);
+        }
+        return $topics;
+    }
 }

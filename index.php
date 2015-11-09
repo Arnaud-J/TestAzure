@@ -10,8 +10,13 @@ require_once "DataAccess.php";
 
 $sectionID = isset($_GET['sectionID']) ? $_GET['sectionID'] : "1";
 $section = DataAccess::getSection($sectionID);
+$topics = DataAccess::getTopics();
 
 htmlHead("Index","","");
+
+foreach($topics as $topic) {
+    echo $topic;
+}
 
 echo $section;
 
