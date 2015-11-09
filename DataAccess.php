@@ -9,7 +9,7 @@
 class DataAccess
 {
     public static function getTitle($sectionID) {
-        $query = "select title from sections where sectionID =". $sectionID;
+        $query = "select sectionName from sections where sectionID =". $sectionID;
         $result=BD::getInstance()->prepareAndExecuteQueryWithResult($query,'');
         return $result;
     }
