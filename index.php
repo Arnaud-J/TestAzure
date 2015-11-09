@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Hello World</title>
-</head>
-<body>
 <?php
+
+require_once "commonFunctions.php";
+
+htmlHead("Index");
 
 echo $_COOKIE['username'] ? ('<h1>Welcome '.$_COOKIE['username'].'</h1>') : '';
 
@@ -34,5 +31,7 @@ if($_COOKIE['access_level']) {
 <p>
     <a href="./login.php">Login</a>
 </p>
-</body>
-</html>
+
+<?php
+    htmlFoot();
+?>
