@@ -13,7 +13,7 @@ $sectionNames = DataAccess::getTitle($sectionID);
 htmlHead("Index","","");
 
 foreach($sectionNames as $sectionName) {
-    echo $sectionName;
+    echo $sectionName['sectionName'];
 }
 
 
