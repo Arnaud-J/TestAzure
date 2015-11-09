@@ -1,7 +1,5 @@
 <?php
 
-require_once "Topic.php";
-
 function isEmpty($var) {
     return isset($var) && $var == "";
 }
