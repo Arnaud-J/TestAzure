@@ -8,7 +8,7 @@
  */
 class DataAccess
 {
-    public static function getTitle($sectionID) {
+    public static function getSection($sectionID) {
 //        $query = "select * from sections, articleText where sections.textID = articleText.textID and sectionID = ?";
         $query = "SELECT * FROM sections LEFT OUTER JOIN articleText ON sections.textID = articleText.textID WHERE sectionID = ?";
         $param= array(0  => array($sectionID, PDO::PARAM_STR));

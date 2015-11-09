@@ -71,10 +71,7 @@ class Section
     {
         $this->sectionID = $sectionID;
         $this->topicID = $topicID;
-//        $this->$sectionName = $sectionName;
-        if(isset($sectionName)) {
-            $this->sectionName=$sectionName;
-        }
+        $this->sectionName = $sectionName;
         $this->orderID = $orderID;
         $this-> textID = $textID;
         if(isset($text)) {
