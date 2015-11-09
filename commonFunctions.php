@@ -15,6 +15,7 @@ function htmlHead($title, $lang, $charset)
             <head lang="'.$realLang.'">
                 <meta charset="'.$realCharset.'">
                 <title>'.$realTitle.'</title>
+                <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
             </head>
             <body>
         ';
