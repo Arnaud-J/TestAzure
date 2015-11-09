@@ -15,6 +15,6 @@ class DataAccess
         foreach($result as $value) {
             $sectionName[] = $value['sectionName'];
         }
-        return $sectionName;
+        return $sectionName['sectionName'];
     }
 }
