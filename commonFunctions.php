@@ -1,7 +1,7 @@
 <?php
 
 function isEmpty($var) {
-    return $var == "";
+    return isset($var) && $var == "";
 }
 
 function htmlHead($title, $lang, $charset)
