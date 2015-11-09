@@ -15,6 +15,6 @@ class DataAccess
         foreach($result as $value) {
             $section = new Section($value['sectionID'], $value['topicID'], $value['sectionName'], $value['orderID'], $value['textID'], $value['text']);
         }
-        return $section;
+        return isset($section) ? $section : null;
     }
 }

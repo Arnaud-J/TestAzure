@@ -10,10 +10,10 @@ class Section
 {
     private $sectionID;
     private $topicID;
-    private $sectionName;
+    private $sectionName="";
     private $orderID;
     private $textID;
-    private $text;
+    private $text="";
 
     /**
      * @return mixed
