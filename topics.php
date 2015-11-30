@@ -1,5 +1,5 @@
 <?php
-
+require_once "commonFunctions.php";
 require_once "Section.php";
 require_once "Topic.php";
 require_once "BD.php";

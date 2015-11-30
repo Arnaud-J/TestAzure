@@ -1,4 +1,5 @@
 <?php
+    require_once "commonFunctions.php";
     htmlHead("Consuming Twitter Webserver","","");
 ?>
 
